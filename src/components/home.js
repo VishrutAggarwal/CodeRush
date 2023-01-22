@@ -78,7 +78,7 @@ class Home extends Component {
                 <header className="header">
                     <div className="snow"><Particles params={Snow} /></div>
                     <div className="header-content">
-                        <h1>Social Winter of Code</h1>
+                        <h1>Code Rush</h1>
                         <div className="header-logo">
                             <a href="./index.html"><img src="./img/logo-2.png" /></a>
                         </div>
@@ -90,7 +90,7 @@ class Home extends Component {
                 <a name="about"></a>
                 <section className="body-content about-swoc" id="about">
                     <div className="about-content col-lg-7">
-                        <h3>About <span>SWOC</span></h3>
+                        <h3>About <span>Code Rush</span></h3>
                         <p>
                             Code Rush is an exciting hackathon event taking place at the prestigious LPU on 18-19th Febuary 2023. 
                             This 24-hour event is designed to give attendees the opportunity to explore  and learn how hackers build 
