@@ -1,8 +1,9 @@
-import { React, Component } from 'react';
+import { Component } from 'react';
+import React from 'react';
 import './css/outline.scss'
 import {
     BrowserRouter as Router,
-    Switch,
+    Routes,
     Route,
     Link
 } from "react-router-dom";
@@ -13,8 +14,6 @@ import {
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import Home from './home';
-import Project from './project';
-// import Team from './team';
 
 
 class Index extends Component {
@@ -111,7 +110,7 @@ class Index extends Component {
                                     <ul className="navbar-nav mr-auto">
                                         {navItems.map((item, index) => {
                                             return (
-                                                <li key={index} className="nav-item"><Link to={item.url} className="nav-link">{item.title}</Link></li>
+                                                <li key={index} className="nav-item"><a className="nav-link" href={item.url}>{item.title}</a></li>
                                             )
                                         })}
                                     </ul>
@@ -124,7 +123,7 @@ class Index extends Component {
                                     <ul>
                                         {navItems.map((item, index) => {
                                             return (
-                                                <li key={index} className={item.title.toLowerCase() == this.state.page && "nav-active"}><Link to={item.url}>{item.title}</Link></li>
+                                                <li key={index} className={item.title.toLowerCase() == this.state.page && "nav-active"}><a href={item.url}>{item.title}</a></li>
                                             )
                                         })}
                                     </ul>
@@ -136,17 +135,10 @@ class Index extends Component {
 
                 {/* body */}
 
-                <Switch>
-                    <Route exact path="/">
-                        <Home />
+                <Routes>
+                    <Route path="/" element={<Home/>}>
                     </Route>
-                    <Route exact path="/project">
-                        <Project />
-                    </Route>
-                    {/* <Route exact path="/team">
-                        <Team />
-                    </Route> */}
-                </Switch>
+                </Routes>
 
                 {/* footer */}
                 <footer>
@@ -165,13 +157,10 @@ class Index extends Component {
                                             <ul>
                                                 <li><a href="/">Home</a></li>
                                                 <li><a href="/#about">About Us</a></li>
-                                                <li><a href="/team">Our Team</a></li>
-                                                <li><a href="/#sponsors">Sponsors</a></li>
                                             </ul>
                                             <ul className="f-nav-ul">
-                                                <li><Link to="/project">Projects</Link></li>
-                                                <li><a href="/#timeline">Timeline</a></li>
-                                                <li><a href="mailto:support@www.swoc.tech">Help</a></li>
+                                                <li><a href="/#sponsors">Sponsors</a></li>
+                                                <li><a href="mailto:scriptfoundation@gmail.com">Help</a></li>
                                             </ul>
                                         </div>
                                         <div className="footer-copyright-info">
@@ -198,9 +187,9 @@ class Index extends Component {
                                     <div className="f-bottom-right">
                                         <p>
                                             Made with ❤️ by
-                                            <a className="yellow-text underline" href="https://github.com/aku1310" target="_blank"> Akanksha </a>
+                                            <a className="yellow-text underline" href="https://github.com/VishrutAggarwal" target="_blank"> Vishrut </a>
                                             and
-                                            <a className="yellow-text underline" href="https://github.com/VishrutAggarwal" target="_blank"> Vishrut</a>
+                                            <a className="yellow-text underline" href="https://github.com/aku1310" target="_blank"> Akanksha </a>
                                         </p>
                                     </div>
                                 </div>

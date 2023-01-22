@@ -1,23 +1,21 @@
-import { React, Component } from 'react';
-import Particles from 'react-particles-js';
-import { Snow } from './snow'
+import { Component } from 'react';
+import React from 'react';
 import './css/home.scss'
 import {
     registerItems,
-    timelineItems,
+    // timelineItems,
     prizeItems,
     GoldSponsors,
-    SilverSponsors,
     PlatSponsors,
-    PlatformPartners,
-    Sponsors,
-    CommunityPartners,
+    // PlatformPartners,
+    // Sponsors,
+    // CommunityPartners,
     FAQs,
 } from './js/homeData'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Carousel from 'react-elastic-carousel';
 
 function useEffectfun() {
@@ -31,6 +29,24 @@ function useEffectfun() {
             document.body.removeChild(script);
         }
     }, []);
+}
+
+function buttonUnique(item) {
+    if (item.cardTitle.toLowerCase() == "delhi") {
+        return (
+            <div
+                class="apply-button"
+                data-hackathon-slug="indiatourdelhi"
+                data-button-theme="light"
+            ></div>
+        )
+    }
+    else {
+        return (<button href={item.applyLink} target="_blank"
+            className={item.applyStatus == "Apply" ? "" : "disabled"}
+            readonly>{item.applyStatus}
+        </button>)
+    }
 }
 
 
@@ -76,11 +92,10 @@ class Home extends Component {
                 {/* Header */}
 
                 <header className="header">
-                    <div className="snow"><Particles params={Snow} /></div>
                     <div className="header-content">
                         <h1>Code Rush</h1>
                         <div className="header-logo">
-                            <a href="./index.html"><img src="./img/logo-2.png" /></a>
+                            <img src="./img/sfp.png" />
                         </div>
                     </div>
                 </header>
@@ -109,7 +124,9 @@ class Home extends Component {
                             From technical workshops and mentor sessions to networking events and competitions, there's something 
                             for everyone at Code Rush.
                         </p>
+                        <p>
                             So why wait? Join us at LPU in Febuary 2023 and discover innovation at Code Rush.
+                        </p>
                     </div>
                     <div className="about-vector">
                         {/* <img src="./img/about.png" /> */}
@@ -128,21 +145,37 @@ class Home extends Component {
                                     <div className="col-md-4 card-cover">
                                         <div className="h-100 to-apply-card card__card__body">
                                             <h5 className="card-title">{item.cardTitle}</h5>
-                                            <p className="card-text">{item.cardText}</p>
+                                            {/* <p className="card-text">{item.cardText}</p> */}
+                                            {item.cardText.split("|").map((el) => {
+                                                return (
+                                                    <p className="card-text">
+                                                        {el}
+                                                    </p>
+                                                );
+                                            })}
                                             <div className="btn-apply">
-                                                {item.cardTitle.toLowerCase() == "participant" ?
-(                                                    <div 
-                                                        class="apply-button" 
-                                                        data-hackathon-slug="" 
+                                                 {/* {item.cardTitle.toLowerCase() == "web 3.0 fellowship" ? */}
+                                                    <div
+                                                        class="apply-button"
+                                                        data-hackathon-slug=""
                                                         data-button-theme="light"
-                                                    ></div>)
-                                                    :
-                                                    (<a href={item.applyLink} target="_blank"
-                                                        className={item.applyStatus.toLowerCase() == "register" ? "" : "disabled"}
-                                                        // disabled={item.applyStatus.toLowerCase() != "register" ? "disabled" : ""}
-                                                        readonly>{item.applyStatus}
-                                                    </a>)
-                                                }
+                                                    ></div>
+
+                                                    {/* // :
+                                                    // (item.cardTitle.toLowerCase() == "punjab" ?
+                                                    //     (<div
+                                                            class="apply-button"
+                                                            data-hackathon-slug="indiatourpunjab"
+                                                            data-button-theme="light"
+                                                        ></div>)
+                                                        :
+                                                        (<a href={item.applyLink} target="_blank"
+                                                            className={item.applyStatus == "Apply" ? "" : "disabled"}
+                                                            readonly>{item.applyStatus}
+                                                        </a>) */}
+                                                
+                                                {/* {buttonUnique(item)} */}
+
                                             </div>
                                         </div>
                                     </div>
@@ -169,7 +202,7 @@ class Home extends Component {
 
 
                 {/* timeline */}
-                <section className="timeline">
+                {/* <section className="timeline">
                     <a name="timeline"></a>
                     <div className="timeline-head">
                         <h3 className="card__card__title">Program Timeline</h3>
@@ -197,7 +230,7 @@ class Home extends Component {
                         <div className="overview-content">
                             <h3>Overview</h3>
                             <p>
-                                Social Winter Of Code is the 3 month long open source program by
+                                Script Winter Of Code is the 3 month long open source program by
                                 Social India , with the aim to introduce more and more
                                 people to the world of Open source. In this program all the selected
                                 participants will get a chance to work on various exciting projects
@@ -205,12 +238,12 @@ class Home extends Component {
                             </p>
                             <p>
                                 Participants can select the project based on their interest and tech
-                                stack, and can communicate with mentors and project admin to know the
+                                stack , and can communicate with mentors and project admin to know the
                                 project better during the Community bonding Period .
                             </p>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <section className="prizes cards-bg-sec">
                     <div className="">
@@ -334,23 +367,6 @@ class Home extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-12">
-                                    <h3>Silver Sponsors</h3>
-                                    <br />
-                                    <div className="community">
-                                        <div className="row row-img grid" style={{ "justify-content": "center" }}>
-                                            {SilverSponsors.map((item, index) => {
-                                                return (
-                                                    <div className="col-md-4 col-sm-6 img-div">
-                                                        <a href={item.sponsorLink} target="_blank">
-                                                            <img className="sponsor-img" src={item.sponsorImg} />
-                                                        </a>
-                                                    </div>
-                                                )
-                                            })}
-                                        </div>
-                                    </div>
-                                </div>
 
                                 {/* <div className="col-md-6">
                                     <h3>Platform Partners</h3>
@@ -398,7 +414,7 @@ class Home extends Component {
                                 })}
                             </div> */}
 
-                            <div className="btn-container p-4" style={{ "text-align": "center" }}>
+                            {/* <div className="btn-container p-4" style={{ "text-align": "center" }}>
                                 <br />
                                 <a
                                     href="https://drive.google.com/file/d/1po-yevUP5dweJiNdvuiEhsi_IyKlOub8/view?usp=sharing"
@@ -406,7 +422,7 @@ class Home extends Component {
                                     className="btn btn-info btn-lg"
                                 >Sponsor Us
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 

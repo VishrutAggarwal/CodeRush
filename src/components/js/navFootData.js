@@ -4,16 +4,8 @@ export const navItems = [
         url: "/",
     },
     {
-        title: "Projects",
-        url: "/project",
-    },
-    {
         title: "Sponsors",
         url: "/#sponsors",
-    },
-    {
-        title: "Our Team",
-        url: "/",
     },
     {
         title: "Contact Us",

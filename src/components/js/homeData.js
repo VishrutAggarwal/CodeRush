@@ -1,31 +1,10 @@
 export const registerItems = [
     {
-        cardTitle: "Project",
-        cardText: `All open-source organizations, Project maintainers are welcome to 
-        mentor budding open-source enthusiasts from all different 
-        backgrounds. Find students and professionals that share your 
-        vision.`,
+        cardTitle: "Web 3.0 Fellowship",
+        cardText: `Registrations will start soon`,
         applyLink: "",
-        // applyLink: "https://forms.gle/eyQM8eJeSWKr3tCD6",
-        applyStatus:"Closed",
-    },
-    {
-        cardTitle: "Participant",
-        cardText: `Whether you’re a newbie or a seasoned professional, we have a 
-        space for everyone. Apply now to become a part of something 
-        exciting!`,
-        applyLink: "",
-        applyStatus:"Coming Soon",
-    },
-    {
-        cardTitle: "Mentor",
-        cardText: `Are you an expert in one (or more) of the projects? Then be a 
-        beacon of light for our participants! As a mentor, you will guide 
-        one team with your insights and experience all through their 
-        hackathon journey.`,
-        applyLink: "",
-        // applyLink: "https://docs.google.com/forms/d/19qbZg1a_DSUAKizSxO_8RoAJCCu9jd-Jms17MmAWP4k/edit?ts=63427042",
-        applyStatus:"Closed",
+        applyStatus:"Register",
+        slug: ""
     },
 ]
 
@@ -97,7 +76,7 @@ export const prizeItems = [
         prizeDescription: `young gun - $USDC 100 for the best project beginners just starting out on Solana and/or | 
         rising teknoking - $USDC 250 for the best project that goes into depth, demonstrating higher-order code and/or | 
         master glasseater - $USDC 500 for the best advanced project that is almost ready for full-time development.`,
-        prizeVector: "./img/logos/solana-sol-logo.svg",
+        prizeVector: "./img/logos/Solana-Colored.png",
         more: "Read about the bounty details and find code templates for Solana here.",
         // "Learn more about the Filecoin Track Prize here.",
         prizeLink:
@@ -109,7 +88,7 @@ export const prizeItems = [
         prizeDescription: `5,000 INR to winning project of the hackathon (must be deployed on Replit) | 
         Replit schwags to 5 eligible submissions deployed on Replit.  | 
         Eligibility to apply for internship/full-time roles at Replit.`,
-        prizeVector: "./img/logos/replit-logo-svg-vector.svg",
+        prizeVector: "./img/logos/Replit-light-background.png",
         more: "Read more about the bounty details for Replit here.",
         // "Learn more about the Filecoin Track Prize here.",
         prizeLink:
@@ -134,22 +113,11 @@ export const GoldSponsors = [
     },
     {
         sponsorLink: "https://solana.com/",
-        sponsorImg: "./img/logos/solana-sol-logo.svg",
+        sponsorImg: "./img/logos/Solana-Colored.png",
     },
     {
         sponsorLink: "https://replit.com/",
-        sponsorImg: "./img/logos/replit-logo-svg-vector.svg",
-    }
-]
-
-export const SilverSponsors = [
-    {
-        sponsorLink: "https://www.quine.sh/",
-        sponsorImg: "./img/logos/dark@2x.png",
-    },
-    {
-        sponsorLink: "https://fossunited.org/",
-        sponsorImg: "./img/logos/black-hackathon.svg",
+        sponsorImg: "./img/logos/Replit-light-background.png",
     }
 ]
 
@@ -162,6 +130,10 @@ export const PlatSponsors = [
         sponsorLink: "https://devfolio.co/",
         sponsorImg: "./img/logos/Devfolio_Logo.svg",
     }
+    // {
+    //     sponsorLink: "https://gradright.com/",
+    //     sponsorImg: "./img/logos/GradRight.png",
+    // }
 ]
 export const PlatformPartners = [
     {
@@ -236,48 +208,55 @@ export const CommunityPartners = [
 export const FAQs = [
     {
         questionId: "question1",
-        questionText: `What is Open source software (OSS)?`,
-        answerText: `A software for which the original source code is made freely 
-        available and may be redistributed and modified according to the 
-        requirement of the user.`,
+        questionText: `What is Web3?`,
+        answerText: `Web3, also known as Web 3.0, is the next iteration of the internet that utilizes 
+        blockchain technology to create a decentralized and more secure network.`,
     },
     {
         questionId: "question2",
-        questionText: `Is there any registration fees?`,
-        answerText: `No, there’s no registration fees. It is absolutely free for participants.`,
+        questionText: `How is Web3 different from the current web?`,
+        answerText: `Web3 is different from the current web (Web 2.0) in that it utilizes blockchain 
+        technology to create a decentralized network where users have more control over their data and 
+        transactions. This eliminates the need for centralized intermediaries and increases security 
+        and privacy.`,
     },
     {
         questionId: "question3",
-        questionText: `Who all can participate ?`,
-        answerText: `No matter if you are a beginner or an expert , SWOC is open for 
-        everyone who has a zeal to learn new things and achieve heights.`,
+        questionText: `What are some examples of Web3 applications?`,
+        answerText: `Web3 applications, also known as dApps, can include decentralized exchanges, 
+        prediction markets, social networks, and more. These dApps run on blockchain networks like 
+        Ethereum and allow users to interact with them in a decentralized and trustless manner.`,
     },
     {
         questionId: "question4",
-        questionText: `Any age limit for participation?`,
-        answerText: `No, it is open for all.`,
+        questionText: `How do I access Web3 applications?`,
+        answerText: `To access web3 applications, you will need a web3-enabled browser such as 
+        MetaMask or Trust Wallet. These browsers allow you to interact with dApps by connecting to 
+        a blockchain network and providing a digital wallet to store your cryptocurrency.`,
     },
     {
         questionId: "question5",
-        questionText: `What will be the prizes and perks?`,
-        answerText: `All the participants with successful participation will get digital
-        certificates and some cool swags.`,
+        questionText: `What is the future of Web3?`,
+        answerText: `The future of web3 is still uncertain, but it is likely that we will see more 
+        adoption of decentralized applications and a shift towards a more decentralized internet. 
+        With the advent of new technologies like sharding, interoperability, and layer 2 scaling 
+        solutions, the web3 ecosystem is expected to evolve rapidly in the coming years.`,
     },
-    {
-        questionId: "question6",
-        questionText: `By what time will the result be out?`,
-        answerText: `The results will be declared by 2nd week of April.`,
-    },
-    {
-        questionId: "question7",
-        questionText: `Can I participate in SWOC both as a participant and mentor?`,
-        answerText: `You can participate either as a mentor or as a participant but not as both.`,
-    },
-    {
-        questionId: "question8",
-        questionText: `What if I have questions other than the one mentioned ?`,
-        answerText: `You can contact us at socialwinterofcode@gmail.com , all your queries would be answered.`,
-    },
+    // {
+    //     questionId: "question6",
+    //     questionText: `By what time will the result be out?`,
+    //     answerText: `The results will be declared by 2nd week of April.`,
+    // },
+    // {
+    //     questionId: "question7",
+    //     questionText: `Can I participate in SWOC both as a participant and mentor?`,
+    //     answerText: `You can participate either as a mentor or as a participant but not as both.`,
+    // },
+    // {
+    //     questionId: "question8",
+    //     questionText: `What if I have questions other than the one mentioned ?`,
+    //     answerText: `You can contact us at scriptfoundation@gmail.com , all your queries would be answered.`,
+    // },
 
 ]
 
