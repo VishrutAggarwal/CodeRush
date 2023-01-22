@@ -107,7 +107,7 @@ class Home extends Component {
                     <div className="about-content col-lg-7">
                         <h3>About <span>Code Rush</span></h3>
                         <p>
-                            Code Rush is an exciting hackathon event taking place at the prestigious LPU on 18-19th Febuary 2023. 
+                            Code Rush is an exciting hackathon event taking place at the prestigious LPU on 18-19th February 2023. 
                             This 24-hour event is designed to give attendees the opportunity to explore  and learn how hackers build 
                             innovative ideas.
                         </p>
