@@ -1,6 +1,6 @@
 export const registerItems = [
     {
-        cardTitle: "Web 3.0 Fellowship",
+        cardTitle: "Participant",
         cardText: `Registrations will start soon`,
         applyLink: "",
         applyStatus:"Register",
