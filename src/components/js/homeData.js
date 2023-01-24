@@ -118,6 +118,10 @@ export const GoldSponsors = [
     {
         sponsorLink: "https://replit.com/",
         sponsorImg: "./img/logos/Replit-light-background.png",
+    },
+    {
+        sponsorLink: "https://quine.io/",
+        sponsorImg: "./img/logos/dark-quine.svg",
     }
 ]
 
