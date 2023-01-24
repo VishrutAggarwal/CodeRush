@@ -208,39 +208,36 @@ export const CommunityPartners = [
 export const FAQs = [
     {
         questionId: "question1",
-        questionText: `What is Web3?`,
-        answerText: `Web3, also known as Web 3.0, is the next iteration of the internet that utilizes 
-        blockchain technology to create a decentralized and more secure network.`,
+        questionText: `What is a hackathon?`,
+        answerText: `A hackathon is an event where participants, often in teams, come together to 
+        brainstorm, design, and develop new software or hardware projects in a limited amount of 
+        time, usually 24 hours.`,
     },
     {
         questionId: "question2",
-        questionText: `How is Web3 different from the current web?`,
-        answerText: `Web3 is different from the current web (Web 2.0) in that it utilizes blockchain 
-        technology to create a decentralized network where users have more control over their data and 
-        transactions. This eliminates the need for centralized intermediaries and increases security 
-        and privacy.`,
+        questionText: `What should I bring to a hackathon?`,
+        answerText: `You should bring a laptop, charger, and any necessary hardware or equipment 
+        for your project. It's also a good idea to bring a change of clothes and toiletries, as 
+        well as snacks and drinks to keep yourself fueled throughout the event.`,
     },
     {
         questionId: "question3",
-        questionText: `What are some examples of Web3 applications?`,
-        answerText: `Web3 applications, also known as dApps, can include decentralized exchanges, 
-        prediction markets, social networks, and more. These dApps run on blockchain networks like 
-        Ethereum and allow users to interact with them in a decentralized and trustless manner.`,
+        questionText: `How can I prepare for a hackathon?`,
+        answerText: `Familiarize yourself with the theme or focus of the hackathon, and think about 
+        what kind of project you would like to work on. It's also helpful to brush up on any 
+        programming languages or technologies you plan to use during the event.`,
     },
     {
         questionId: "question4",
-        questionText: `How do I access Web3 applications?`,
-        answerText: `To access web3 applications, you will need a web3-enabled browser such as 
-        MetaMask or Trust Wallet. These browsers allow you to interact with dApps by connecting to 
-        a blockchain network and providing a digital wallet to store your cryptocurrency.`,
+        questionText: `Can I work on my own or do I have to work in a team?`,
+        answerText: `You have to make a team on devfolio min 2 max 3`,
     },
     {
         questionId: "question5",
-        questionText: `What is the future of Web3?`,
-        answerText: `The future of web3 is still uncertain, but it is likely that we will see more 
-        adoption of decentralized applications and a shift towards a more decentralized internet. 
-        With the advent of new technologies like sharding, interoperability, and layer 2 scaling 
-        solutions, the web3 ecosystem is expected to evolve rapidly in the coming years.`,
+        questionText: `What happens at the end of the hackathon?`,
+        answerText: `At the end of the hackathon, teams will present their projects to a panel of judges. 
+        The judges will then decide on the winning projects based on criteria such as creativity, 
+        technical difficulty, and overall execution. Prizes are often awarded to the winning teams.`,
     },
     // {
     //     questionId: "question6",
