@@ -47,6 +47,41 @@ export const timelineItems = [
     },
 ]
 
+
+
+export const themes = [
+    {
+        themeType: "Healthcare",
+        prizeDescription: `A product or service that addresses a healthcare problem.`,
+        themeVector: "./img/logos/Polygon_Logo.svg"
+    },
+    {
+        themeType: "FinTech",
+        prizeDescription: `A technology-based financial service or product.`,
+        themeVector: "./img/logos/Polygon_Logo.svg"
+    },
+    {
+        themeType: "EdTech",
+        prizeDescription: `A technology-based educational service or product.`,
+        themeVector: "./img/logos/Polygon_Logo.svg"
+    },
+    {
+        themeType: "Open Source",
+        prizeDescription: `A solution refers to software that can be freely modified and shared.`,
+        themeVector: "./img/logos/Polygon_Logo.svg"
+    },
+    {
+        themeType: "Artificial Intelligence",
+        prizeDescription: `A technology that mimics human intelligence and decision making.`,
+        themeVector: "./img/logos/Polygon_Logo.svg"
+    },
+    {
+        themeType: "Web Development",
+        prizeDescription: `A web-based financial service or product.`,
+        themeVector: "./img/logos/Polygon_Logo.svg"
+    },
+]
+
 export const prizeItems = [
     {
         prizeTitle: "Special Prizes",
