@@ -5,6 +5,7 @@ import {
     registerItems,
     // timelineItems,
     prizeItems,
+    themes,
     GoldSponsors,
     PlatSponsors,
     // PlatformPartners,
@@ -245,7 +246,7 @@ class Home extends Component {
                     </div>
                 </section> */}
 
-                <section className="prizes cards-bg-sec">
+                {/* <section className="prizes cards-bg-sec">
                     <div className="">
                         <h3 className="card__card__title body-content">
                             Prizes And Rewards
@@ -265,6 +266,55 @@ class Home extends Component {
                                                         <>
                                                             <br />
                                                             <span class="provider">{item.provider}</span>
+                                                        </>
+                                                    )}
+                                                </h3>
+                                                <ul>
+                                                    {item.prizeDescription.split("|").map((el) => {
+                                                        return (
+                                                            <li>
+                                                                <p className="card-text">{el}</p>
+                                                            </li>
+                                                        );
+                                                    })}
+                                                </ul>
+                                                {item.more && (
+                                                    <a
+                                                        target="_blank"
+                                                        href={item.prizeLink}
+                                                        className="learn-more"
+                                                    >
+                                                        {item.more}
+                                                    </a>
+                                                )}
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </Carousel>
+                        </div>
+                    </div>
+                </section> */}
+
+                <section className="prizes cards-bg-sec">
+                    <div className="">
+                        <h3 className="card__card__title body-content">
+                            Themes
+                        </h3>
+                        <div className="carousel-container">
+                            <Carousel breakPoints={this.carouselBreakPoints}>
+                                {themes.map((item, index) => {
+                                    return (
+                                        <div className="prize-card card__card__body">
+                                            <div className="prize-card-img">
+                                                <img src={item.themeVector} />
+                                            </div>
+                                            <div className="prize-card-text">
+                                                <h3 className="card-title">
+                                                    {item.themeType && (
+                                                        <>
+                                                            <br />
+                                                            <span class="provider">{item.themeType}</span>
                                                         </>
                                                     )}
                                                 </h3>
