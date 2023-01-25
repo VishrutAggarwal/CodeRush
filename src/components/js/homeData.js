@@ -53,32 +53,22 @@ export const themes = [
     {
         themeType: "Healthcare",
         prizeDescription: `A product or service that addresses a healthcare problem.`,
-        themeVector: "./img/logos/Polygon_Logo.svg"
-    },
-    {
-        themeType: "FinTech",
-        prizeDescription: `A technology-based financial service or product.`,
-        themeVector: "./img/logos/Polygon_Logo.svg"
+        themeVector: "./img/healththeme.jpeg"
     },
     {
         themeType: "EdTech",
         prizeDescription: `A technology-based educational service or product.`,
-        themeVector: "./img/logos/Polygon_Logo.svg"
+        themeVector: "./img/edtechtheme.jpeg"
     },
     {
-        themeType: "Open Source",
+        themeType: "Open Innovation",
         prizeDescription: `A solution refers to software that can be freely modified and shared.`,
-        themeVector: "./img/logos/Polygon_Logo.svg"
+        themeVector: "./img/openinnotheme.jpeg"
     },
     {
-        themeType: "Artificial Intelligence",
+        themeType: "Artificial Intelligence & Machine Learning",
         prizeDescription: `A technology that mimics human intelligence and decision making.`,
-        themeVector: "./img/logos/Polygon_Logo.svg"
-    },
-    {
-        themeType: "Web Development",
-        prizeDescription: `A web-based financial service or product.`,
-        themeVector: "./img/logos/Polygon_Logo.svg"
+        themeVector: "./img/aimltheme.jpeg"
     },
 ]
 
