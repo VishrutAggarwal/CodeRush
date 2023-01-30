@@ -1,7 +1,7 @@
 export const registerItems = [
     {
         cardTitle: "Participant",
-        cardText: `Registrations will start soon`,
+        cardText: `Date: 18-19th February | Venue: Lovely Professional University, Punjab`,
         applyLink: "",
         applyStatus:"Register",
         slug: ""
@@ -145,7 +145,7 @@ export const GoldSponsors = [
         sponsorImg: "./img/logos/Replit-light-background.png",
     },
     {
-        sponsorLink: "https://quine.io/",
+        sponsorLink: "https://quine.sh/",
         sponsorImg: "./img/logos/dark-quine.svg",
     }
 ]
