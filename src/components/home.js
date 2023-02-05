@@ -158,7 +158,7 @@ class Home extends Component {
                                                  {/* {item.cardTitle.toLowerCase() == "web 3.0 fellowship" ? */}
                                                     <div
                                                         class="apply-button"
-                                                        data-hackathon-slug="codetherush"
+                                                        data-hackathon-slug="coderush"
                                                         data-button-theme="light"
                                                     ></div>
 
