@@ -108,14 +108,13 @@ class Home extends Component {
                     <div className="about-content col-lg-7">
                         <h3>About <span>Code Rush</span></h3>
                         <p>
-                            Code Rush is an exciting hackathon event taking place at the prestigious LPU on 18-19th February 2023. 
-                            This 24-hour event is designed to give attendees the opportunity to explore  and learn how hackers build 
-                            innovative ideas.
+                            Code Rush is an exciting hackathon event taking place on 15-16th February. This 12-hour event is 
+                            designed to give attendees the opportunity to explore and learn how hackers build innovative ideas.
                         </p>
                         <p>
                             At Code Rush, participants will have the chance to work with some of the leading experts in the field 
-                            and discover new ways of approaching Whether you're an experienced developer or just starting out, this 
-                            event is the perfect opportunity to learn and grow your skills.
+                            and discover new ways of approaching and building ideas. Whether you're an experienced developer or 
+                            just starting out, this event is the perfect opportunity to learn and grow your skills.
                         </p>
                         <p>
                             Throughout the hackathon, attendees will have access to a range of resources and support to help them 
@@ -124,9 +123,6 @@ class Home extends Component {
                         <p>
                             From technical workshops and mentor sessions to networking events and competitions, there's something 
                             for everyone at Code Rush.
-                        </p>
-                        <p>
-                            So why wait? Join us at LPU in Febuary 2023 and discover innovation at Code Rush.
                         </p>
                     </div>
                     <div className="about-vector">
@@ -158,7 +154,7 @@ class Home extends Component {
                                                  {/* {item.cardTitle.toLowerCase() == "web 3.0 fellowship" ? */}
                                                     <div
                                                         class="apply-button"
-                                                        data-hackathon-slug="coderush"
+                                                        data-hackathon-slug="codetherush"
                                                         data-button-theme="light"
                                                     ></div>
 
