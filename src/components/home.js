@@ -32,23 +32,6 @@ function useEffectfun() {
     }, []);
 }
 
-function buttonUnique(item) {
-    if (item.cardTitle.toLowerCase() == "delhi") {
-        return (
-            <div
-                class="apply-button"
-                data-hackathon-slug="indiatourdelhi"
-                data-button-theme="light"
-            ></div>
-        )
-    }
-    else {
-        return (<button href={item.applyLink} target="_blank"
-            className={item.applyStatus == "Apply" ? "" : "disabled"}
-            readonly>{item.applyStatus}
-        </button>)
-    }
-}
 
 
 class Home extends Component {
@@ -150,10 +133,11 @@ class Home extends Component {
                                                     </p>
                                                 );
                                             })}
+                                            {useEffectfun}
                                             <div className="btn-apply">
                                                  {/* {item.cardTitle.toLowerCase() == "web 3.0 fellowship" ? */}
                                                     <div
-                                                        class="apply-button"
+                                                        className="apply-button"
                                                         data-hackathon-slug="codetherush"
                                                         data-button-theme="light"
                                                     ></div>
