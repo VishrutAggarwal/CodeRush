@@ -1,8 +1,8 @@
 export const registerItems = [
     {
         cardTitle: "Participant",
-        cardText: `Date: 18-19th February | Venue: Lovely Professional University, Punjab`,
-        applyLink: "",
+        cardText: `Date: 15th February | Venue: Amity University, Noida`,
+        applyLink: "https://codetherush.devfolio.co/",
         applyStatus:"Register",
         slug: ""
     },
