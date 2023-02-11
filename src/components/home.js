@@ -15,22 +15,10 @@ import {
 } from './js/homeData'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Devfoliobutton from './Devfoliobutton';
 
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Carousel from 'react-elastic-carousel';
-
-function useEffectfun() {
-    React.useEffect(() => {
-        const script = document.createElement('script');
-        script.src = 'https://apply.devfolio.co/v2/sdk.js';
-        script.async = true;
-        script.defer = true;
-        document.body.appendChild(script);
-        return () => {
-            document.body.removeChild(script);
-        }
-    }, []);
-}
 
 
 
@@ -71,7 +59,6 @@ class Home extends Component {
         const { items } = this.state;
         return (
             <>
-                {useEffectfun}
                 <span hidden="true" id="page-name">Home</span>
                 {/* Header */}
 
@@ -133,14 +120,9 @@ class Home extends Component {
                                                     </p>
                                                 );
                                             })}
-                                            {useEffectfun}
                                             <div className="btn-apply">
                                                  {/* {item.cardTitle.toLowerCase() == "web 3.0 fellowship" ? */}
-                                                    <div
-                                                        className="apply-button"
-                                                        data-hackathon-slug="codetherush"
-                                                        data-button-theme="light"
-                                                    ></div>
+                                                    <Devfoliobutton></Devfoliobutton>
 
                                                     {/* // :
                                                     // (item.cardTitle.toLowerCase() == "punjab" ?
